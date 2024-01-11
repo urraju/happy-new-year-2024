@@ -1,0 +1,278 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+$font-inter :'Inter', sans-serif;
+$background-color : fill linear-gradient(180deg, rgba(255, 0, 0, 0.10) 0%, rgba(255, 0, 0, 0.00) 100%);
+$text-color : #F00;
+$background-color2 : #F00;
+$max-width : 1320px;
+$text-capitalize : capitalize;
+$text-upercase : uppercase;
+$margin-auto : auto;
+$display-flex : flex;
+$content-center : center;
+$items-center : center;
+$p-text-color : rgb(81, 81, 81);
+
+
+
+header{
+    max-width: $max-width;
+    margin: auto;
+    background-image: url('/img/Banner\ Image.png');
+    background-size: cover;
+    margin-top: 15px;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+header::after{
+    content: '';
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    border-radius: 16px;
+    background: linear-gradient(180deg, #070211 0%, rgba(7, 2, 17, 0.00) 100%);
+}
+.banner{
+    z-index:  1;
+    color: white;
+    text-align: center;
+    font-family: $font-inter;
+}
+.banner h3{
+    font-size:  25px;
+    text-transform: uppercase;
+    font-weight: 200;
+    margin-bottom: 10px;
+}
+.banner h1{
+    font-size: 50px;
+    text-transform: uppercase;
+}
+
+// main section start 
+// category section 
+
+main {
+    margin-top: 80px;
+    margin: 100px 0;
+}
+.category-section{
+    max-width: $max-width;
+    margin: $margin-auto;
+    display: $display-flex;
+    flex-direction: column;
+    justify-content: $content-center;
+    align-items: $items-center;
+    font-family: $font-inter;
+}
+.category-section h1{
+    color: $text-color;
+    text-transform: $text-upercase;
+    font-size: 88px;
+    margin-bottom: 48px;
+}
+.category-section p{
+    color: $text-color;
+    text-transform: $text-upercase;
+    font-size: 24px;
+}
+.category-section h4{
+    text-transform: $text-upercase;
+    margin-top: 8px;
+}
+.category-section img{
+    margin-top: 48px;
+}
+
+// party section start 
+
+.party-main-section{
+    max-width: $max-width;
+    margin: auto;
+}
+.party-section{
+    background-image: url('/img/Vectorrr.png');
+     
+    margin: $margin-auto;
+     object-fit:  cover;
+    background-repeat: no-repeat;
+     
+    position: relative;
+    width: 100%;
+    height: 600px;
+    display: $display-flex;
+    justify-content: space-around;
+    align-items: $items-center;
+    margin-top: 120px;
+     
+}
+
+.party-section::after{
+    content: '';
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    border-radius: 16px;
+    background: linear-gradient(90deg, #070211c5 0%, rgba(7, 2, 17, 0.00) 100%);
+}
+
+.party-section .party-text {
+    width: 500px;
+}
+.party-image img {
+    width: 300px;
+    margin: auto;
+}
+.party-text h1{
+    letter-spacing: 5px;
+    font-family: $font-inter;
+    font-size: 50px;
+    color: white;
+    margin-bottom: 8px;
+}
+.party-text p{
+    color: white;
+    font-weight: lighter;
+
+}
+.party-text{
+    z-index: 1;
+    font-family: $font-inter;
+}
+.party-text button{
+    margin-top: 20px;
+    background: black;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    outline: none;
+    border-radius: 5px;
+    color: white;
+    overflow: hidden;
+}
+
+// timing section 
+.timing-section{
+    margin-top: 80px;
+}
+.time-content{
+  margin-top: 80px;
+  background:  linear-gradient(180deg, rgba(255, 0, 0, 0.10) 0%, rgba(255, 0, 0, 0.00) 100%);
+  height: 480px;
+  max-width: $max-width;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 10px;
+  font-family: $font-inter;
+  font-weight: 500;
+  gap: 20px;
+
+}
+.time-content h3{
+    color: $text-color;
+    font-size: 20px;
+}
+.time-content span{
+    color: $p-text-color;
+
+}
+.time-content button{
+    background: $background-color2;
+    outline: none;
+    border: none;
+    padding: 10px 20px;
+    color: white;
+    border-radius: 5px;
+    text-transform: uppercase;
+    margin-top: 20px;
+}
+
+// offer section start 
+.offer-main-section{
+    max-width: $max-width;
+    margin: auto;
+    margin-top: 80px;
+    display: flex;
+    justify-content:  space-between;
+    align-items: center;
+    font-family: $font-inter;
+}
+.offer-content{
+    width: 400px;
+     
+}
+.offer-content p{
+    color: $text-color;
+    margin-bottom: 10px;
+    font-size: 24px;
+}
+.offer-content .text-p{
+    color: $p-text-color;
+    margin-top: 10px;
+    font-size: 20px;
+}
+.offer-content h1{
+    font-size: 48px;
+}
+.offer-right-content{
+    width: 280px;
+
+}
+.offer-right-content h1{
+    color: $text-color;
+    margin-bottom: 10px;
+    font-size: 24px;
+}
+.offer-right-content p{
+    color: $p-text-color;
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+.offer-img img{
+    border: 10px solid #F00;
+    border-radius: 100%;
+    padding: 25px;
+    
+}
+
+// holiday section 
+.holiday-section{
+    max-width: $max-width;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 80px;
+}
+.holidy-item {
+    font-family: $font-inter;
+    text-align: center;
+}
+.holidy-item p{
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+.holidy-item h1{
+    color: $text-color;
+    font-size: 72px;
+    margin-bottom: 20px;
+}
+.holidy-item span{
+    color: black;
+}
+.holiday-text{
+    color: $p-text-color;
+}
+ 
